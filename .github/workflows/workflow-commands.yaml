@@ -1,0 +1,9 @@
+name: Workflow Commands
+on: push
+
+jobs:
+    testing-ef-commands:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Setting an error meassge
+              run: echo "::error::Missing semicolon"
